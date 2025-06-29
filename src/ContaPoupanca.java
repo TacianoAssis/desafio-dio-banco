@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+public class ContaPoupanca extends Conta{
 
-public class ContaPoupanca {
+    public ContaPoupanca(Cliente cliente) {
+        super(cliente);
+    }
+
+    @Override
+    public void imprimirExtrato() {
+
+        System.out.println("=== Extrato da Conta Poupanca ===");
+        super.infosComuns();
+    }
 }
